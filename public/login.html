@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-login.css">
+    <title>Log in</title>
+    <script type="module" src="./login.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-auth.js"></script>
+</head>
+
+<body>
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+    <div class="floating-circle circle-3"></div>
+    <div class="main-container centered-flex">
+        <div class="form-container">
+            <div class="icon fa fa-user"><img <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3YxaHQzamtsd2F3c3dnOWU4Ym10YzR5MHMwcHVneDB1MXU4ZjM0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xwgABNX9ikRq5lbgMU/giphy.gif"></div>
+            <form class="centered-flex">
+                <div class="title">SIGN IN</div>
+                <div class="msg"></div>
+                <div class="field">
+                    <input type="text" placeholder="Username" id="uname">
+                    <span class="fa fa-user"></span>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" id="pass">
+                    <span class="fa fa-lock"></span>
+                </div>
+                <div class="btn-container">
+                    <input type="submit" id="login-btn" value="login">
+                </div>
+                <div class="signup"> I don't have an Account?<a href="registration.html"
+                    > Sign up</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
