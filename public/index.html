@@ -17,7 +17,7 @@
         <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3YxaHQzamtsd2F3c3dnOWU4Ym10YzR5MHMwcHVneDB1MXU4ZjM0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xwgABNX9ikRq5lbgMU/giphy.gif" alt="Chatbot Logo">
         <h1>Thara AI</h1>
         <div class="log-btn">
-          <a href="/public/login.html">Logout</a>
+          <a href="/home/user/thara/public/index.html">Logout</a>
         </div>
     </div>
     <div id="chatContainer" class="chat-container">
@@ -47,9 +47,8 @@
 
     <script src="script.js"> </script>
     <script>
-        // Redirect to login.html or registration.html upon opening
-        if (!localStorage.getItem('loggedIn')) { // Assuming a flag is set on successful login/registration
-            window.location.replace('/public/login.html'); // Or registration.html
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.replace('/home/user/thara/public/index.html'); // Or registration.html
         }
     </script>
 </body>
