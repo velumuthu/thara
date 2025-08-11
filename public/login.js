@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 console.log("User:", userCredential.user);
-                window.location.href="https://thara-ggt9.onrender.com/";
+                localStorage.setItem('loggedIn', 'true');
+                window.location.replace("index.html");
             })
             .catch((error) => {
                 alert(error.message);
